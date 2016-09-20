@@ -1,0 +1,32 @@
+[Greatfirelist]
+! Checksum: bCpYiGgssrmlayOJIPhFTA
+! Expires: 7d
+! Title: Greatfire List
+! fu(o)c(r)k from https://github.com/gfwlist/tinylist
+! Last Modified: Tue, 20 Sep 2016 04:05:56 GMT
+!
+! HomePage: https://github.com/TkYu/BlocksiteList
+! License: https://github.com/TkYu/BlocksiteList/blob/master/LICENSE
+!
+!##############General List Start###############
+||blogspot.com
+||dropbox.com
+||facebook.com
+||fbcdn.net
+||ggpht.com
+||gmodules.com
+||google.com
+||google.com.hk
+||googleapis.com
+||googleusercontent.com
+||instagram.com
+||twitter.com
+||zh.wikipedia.org
+||youtube.com
+||scmpchinese.com
+||scmp.com
+!##############General List End#################
+
+!##############Greatfire List Start#################
+
+!##############Greatfire List End#################
