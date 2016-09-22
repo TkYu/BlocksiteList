@@ -1,11 +1,20 @@
-﻿using System;
+﻿//------------------------------------------------------------------------------
+// <copyright file="WebUtility.cs" company="Microsoft">
+//     Copyright (c) Microsoft Corporation.  All rights reserved.
+// </copyright>
+//------------------------------------------------------------------------------
+
+// Don't entity encode high chars (160 to 256), to fix bugs VSWhidbey 85857/111927
+// 
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BlocksiteList
+namespace System.Net
 {
-    public static class UrlUtility
+    public static class WebUtility
     {
         public static string UrlDecode(this string str)
         {
