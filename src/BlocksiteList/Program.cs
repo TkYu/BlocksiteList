@@ -138,9 +138,6 @@ namespace BlocksiteList
             result.Save();
             Console.WriteLine("All Finished");
         }
-        
-
-
 
         #region MR
         public static Tuple<string, string> MapReduce(MObject[] list)
@@ -214,7 +211,7 @@ namespace BlocksiteList
             var result = (from ip in ipdistinct
                           where !filtered.Contains(ip.Value)
                           select ip.Key).ToList();
-            result.AddRange(filtered.Select(c => $"||{c}.*^"));
+            result.AddRange(filtered.Select(c => $"{c}.*"));
             mo.pureIPAddress = result;
             return mo;
         }
@@ -236,6 +233,7 @@ namespace BlocksiteList
         {
             var result = new ReduceObject();
             Console.WriteLine("Merge");
+            result.Result.AddRange(mo.pureIPAddress);
             result.Result.AddRange(mo.pureHost.Select(c => c.StartsWith("www.") ? $"||{c.Substring(4, c.Length - 4)}" : $"||{c}"));
             foreach (var item in mo.urlWithHttps)
             {
