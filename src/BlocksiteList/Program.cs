@@ -153,8 +153,10 @@ namespace BlocksiteList
         {
             File.WriteAllText("O_BlackWords.txt", result.Item1);
             File.WriteAllText("O_greatfirelist.txt", result.Item2);
-            File.WriteAllText("BlackWords.txt", string.Join("\n", Split(Convert.ToBase64String(System.Text.Encoding.ASCII.GetBytes(result.Item1)),64)));
-            File.WriteAllText("greatfirelist.txt", string.Join("\n", Split(Convert.ToBase64String(System.Text.Encoding.ASCII.GetBytes(result.Item2)),64)));
+            File.WriteAllText("BlackWords.txt", Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(result.Item1)));
+            File.WriteAllText("greatfirelist.txt", Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(result.Item2)));
+            //File.WriteAllText("BlackWords.txt", string.Join("\n", Split(Convert.ToBase64String(System.Text.Encoding.ASCII.GetBytes(result.Item1)),64)));
+            //File.WriteAllText("greatfirelist.txt", string.Join("\n", Split(Convert.ToBase64String(System.Text.Encoding.ASCII.GetBytes(result.Item2)),64)));
         }
         public static MapObject Mapping(this MObject[] list)
         {
