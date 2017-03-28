@@ -6,8 +6,5 @@ This just a little tiny work, i clawed this site and take these domain to an [Au
 BTW i drop these chinese uri to Elasticsearch(with ik) to analysis ["key words"](https://raw.githubusercontent.com/TkYu/GreatfireParseResult/master/blackwords.txt)
 
 ## If u want run it by yourself
-1.  Install [.net core](https://www.microsoft.com/net/core)
-2.  Install [elasticsearch](https://www.elastic.co/downloads)
-3.  Install [elasticsearch-ik](https://github.com/medcl/elasticsearch-analysis-ik)
-4.  Check out this project and modify Program.cs/elastic to yours
-5.  dotnet restore & dotnet run
+1.  Install [Visual Studio 2017](https://www.visualstudio.com/downloads/)
+2.  Open BlocksiteList.sln and press F5
